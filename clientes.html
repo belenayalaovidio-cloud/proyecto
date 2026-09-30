@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clientes - SweetSys</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🍰 SweetSys</h2>
+
+<ul>
+
+<li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+
+<li><a href="productos.html"><i class="fa-solid fa-cake-candles"></i> Productos</a></li>
+
+<li><a href="clientes.html"><i class="fa-solid fa-users"></i> Clientes</a></li>
+
+<li><a href="ventas.html"><i class="fa-solid fa-cart-shopping"></i> Ventas</a></li>
+
+<li><a href="inventario.html"><i class="fa-solid fa-box"></i> Inventario</a></li>
+
+<li><a href="reportes.html"><i class="fa-solid fa-chart-column"></i> Reportes</a></li>
+
+<li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</a></li>
+
+</ul>
+
+</div>
+
+<div class="contenido">
+
+<h1>👥 Registro de Clientes</h1>
+
+<form>
+
+<label>Nombre completo</label>
+<input type="text" id="nombre">
+
+<label>Teléfono</label>
+<input type="text" id="telefono">
+
+<label>Correo electrónico</label>
+<input type="email" id="correo">
+
+<button type="button" onclick="guardarCliente()">
+Guardar Cliente
+</button>
+
+</form>
+
+<br>
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Teléfono</th>
+<th>Correo</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaClientes">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="clientes.js"></script>
+
+</body>
+</html>

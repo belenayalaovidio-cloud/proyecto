@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ventas - SweetSys</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🍰 SweetSys</h2>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i> Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="productos.html">
+                <i class="fa-solid fa-cake-candles"></i> Productos
+            </a>
+        </li>
+
+        <li>
+            <a href="clientes.html">
+                <i class="fa-solid fa-users"></i> Clientes
+            </a>
+        </li>
+
+        <li>
+            <a href="ventas.html">
+                <i class="fa-solid fa-cart-shopping"></i> Ventas
+            </a>
+        </li>
+
+        <li>
+            <a href="inventario.html">
+                <i class="fa-solid fa-box"></i> Inventario
+            </a>
+        </li>
+
+        <li>
+            <a href="reportes.html">
+                <i class="fa-solid fa-chart-column"></i> Reportes
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="contenido">
+
+    <h1>🛒 Registro de Ventas</h1>
+
+    <form>
+
+    <div class="campo">
+       <label>Cliente</label>
+
+        <select id="cliente">
+        <option value="">Seleccione un cliente</option>
+         </select>
+    </div>
+
+
+    <div class="campo">
+        <label>Producto</label>
+
+        <select id="producto" onchange="mostrarPrecio()">
+            <option value="">Seleccione un producto</option>
+        </select>
+    </div>
+
+
+    <div class="campo">
+        <label>Precio (Bs)</label>
+
+        <input
+            type="number"
+            id="precio"
+            placeholder="Precio"
+            readonly
+        >
+    </div>
+
+
+    <div class="campo">
+        <label>Cantidad</label>
+
+        <input
+            type="number"
+            id="cantidad"
+            min="1"
+            placeholder="Cantidad"
+        >
+    </div>
+
+
+    <button
+        type="button"
+        onclick="registrarVenta()"
+    >
+        Registrar Venta
+    </button>
+
+</form>
+
+    <br>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                
+                <th>Fecha</th>
+
+                <th>Cliente</th>
+
+                <th>Producto</th>
+
+                <th>Precio</th>
+
+                <th>Cantidad</th>
+
+                <th>Total</th>
+
+                <th>Acciones</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="tablaVentas">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<script src="ventas.js"></script>
+
+</body>
+
+</html>

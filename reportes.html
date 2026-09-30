@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Reportes - SweetSys</title>
+
+<link rel="stylesheet"
+href="estilos.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+    <h2>🍰 SweetSys</h2>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="productos.html">
+                <i class="fa-solid fa-cake-candles"></i>
+                Productos
+            </a>
+        </li>
+
+        <li>
+            <a href="clientes.html">
+                <i class="fa-solid fa-users"></i>
+                Clientes
+            </a>
+        </li>
+
+        <li>
+            <a href="ventas.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Ventas
+            </a>
+        </li>
+
+        <li>
+            <a href="inventario.html">
+                <i class="fa-solid fa-box"></i>
+                Inventario
+            </a>
+        </li>
+
+        <li>
+            <a href="reportes.html">
+                <i class="fa-solid fa-chart-column"></i>
+                Reportes
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Cerrar sesión
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="contenido">
+
+    <h1>📊 Reportes de Ventas</h1>
+
+    <p>
+        Resumen de las ventas del período actual.
+    </p>
+
+
+    <div class="reportes">
+
+
+        <div class="reporte-card">
+
+            <h3>💰 Total vendido</h3>
+
+            <p id="totalVendido">
+                Bs 0.00
+            </p>
+
+        </div>
+
+
+        <div class="reporte-card">
+
+            <h3>🛒 Número de ventas</h3>
+
+            <p id="numeroVentas">
+                0
+            </p>
+
+        </div>
+
+
+        <div class="reporte-card">
+
+            <h3>📦 Productos vendidos</h3>
+
+            <p id="productosVendidos">
+                0
+            </p>
+
+        </div>
+
+
+        <div class="reporte-card">
+
+            <h3>🏆 Producto más vendido</h3>
+
+            <p id="productoMasVendido">
+                Ninguno
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <h2>📋 Ventas del período actual</h2>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="tablaReportes">
+
+        </tbody>
+
+    </table>
+
+
+    <br><br>
+
+
+    <h2>📚 Historial de informes</h2>
+
+    <p>
+        Informes generados automáticamente cada 15 días.
+    </p>
+
+
+    <div id="historialInformes">
+
+    </div>
+
+
+</div>
+
+
+<script src="reportes.js"></script>
+
+</body>
+
+</html>

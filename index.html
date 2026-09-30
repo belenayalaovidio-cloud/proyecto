@@ -1,0 +1,132 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetSys - Inicio</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🍰 SweetSys</h2>
+
+    <ul>
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i> Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="productos.html">
+                <i class="fa-solid fa-cake-candles"></i> Productos
+            </a>
+        </li>
+
+        <li>
+            <a href="clientes.html">
+                <i class="fa-solid fa-users"></i> Clientes
+            </a>
+        </li>
+
+        <li>
+            <a href="ventas.html">
+                <i class="fa-solid fa-cart-shopping"></i> Ventas
+            </a>
+        </li>
+
+        <li>
+            <a href="inventario.html">
+                <i class="fa-solid fa-box"></i> Inventario
+            </a>
+        </li>
+
+        <li>
+            <a href="reportes.html">
+                <i class="fa-solid fa-chart-column"></i> Reportes
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<div class="contenido">
+
+    <h1>Bienvenido a SweetSys 🍰</h1>
+
+    <p>Panel principal del Sistema de Ventas para Repostería.</p>
+
+    <div class="tarjetas">
+
+        <div class="card">
+            <i class="fa-solid fa-cake-candles fa-2x"></i>
+            <h2>Productos</h2>
+            <p id="totalProductos">0</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-users fa-2x"></i>
+            <h2>Clientes</h2>
+            <p id="totalClientes">0</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            <h2>Ventas</h2>
+            <p id="totalVentas">Bs. 0.00</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-box fa-2x"></i>
+            <h2>Inventario</h2>
+            <p id="totalInventario">0</p>
+        </div>
+
+    </div>
+
+    <div class="resumen">
+
+        <h2>📊 Resumen del sistema</h2>
+
+        <div class="info">
+
+            <div>
+                <h3>Productos con poco stock</h3>
+                <p id="stockBajo">0</p>
+            </div>
+
+            <div>
+                <h3>Productos registrados</h3>
+                <p id="productosRegistrados">0</p>
+            </div>
+
+            <div>
+                <h3>Clientes registrados</h3>
+                <p id="clientesRegistrados">0</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="inicio.js"></script>
+
+</body>
+</html>
+```
